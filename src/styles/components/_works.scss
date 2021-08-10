@@ -1,0 +1,19 @@
+.works {
+
+  .works-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-between;
+    list-style: none;
+
+    .work-bullet {
+      flex: 0 0 30%;
+      text-decoration: none;
+
+      &:visited {
+        color: $color-2;
+      }
+    }
+  }
+}

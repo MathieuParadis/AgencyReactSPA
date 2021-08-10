@@ -1,0 +1,40 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: 0 $padding-x;
+  width: 15%;
+  justify-content: space-between;
+
+  a {
+    margin: 10px 0 ;
+    padding: 10px 0;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+
+    &:visited {
+      color: $color-2;
+    }
+
+    &:hover {
+      color: $color-1;
+    }
+  }
+  .nav-active {
+    &:hover {
+      color: $color-2;
+    }
+    
+    &::after {
+      content: "";
+      width: 85%;
+      height: 5px;
+      background: $color-1;
+      position: absolute;
+      bottom: 1px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
