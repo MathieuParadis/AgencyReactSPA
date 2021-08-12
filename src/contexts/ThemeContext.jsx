@@ -4,7 +4,7 @@ export const ThemeContext = createContext();
 
 const ThemeContextProvider = (props) => {
 
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(true);
 
   const toggleTheme = () => {
     setTheme(!theme)

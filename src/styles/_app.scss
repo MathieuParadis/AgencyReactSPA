@@ -1,0 +1,15 @@
+.app.light {
+  background-color: white;
+  h1, p {
+    color:black;
+  }
+}
+
+.app.dark {
+  background-color: rgba(14, 2, 2, 0.822);
+
+  h1, p {
+    color: white;
+  }
+}
+

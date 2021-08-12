@@ -5,7 +5,16 @@ $color-4: white;
 
 $padding-x: 2.5em;
 
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.content {
   margin: 0 $padding-x;
   width: auto;
 }
