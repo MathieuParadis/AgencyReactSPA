@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Switch } from 'antd';
-
+import { ThemeContext } from '../contexts/ThemeContext';
 
 const ToggleThemeButton = () => {
+  const {toggleTheme, theme} = useContext(ThemeContext);
+
   return (
     <div className="toggle-theme-button">
-      <button>Dark mode</button>
-      <Switch />
-
+      <Switch onClick={toggleTheme} checkedChildren="light" unCheckedChildren="dark" className={theme ? "light" : "dark"}/>
     </div>
   );
 };

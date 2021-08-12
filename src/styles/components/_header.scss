@@ -7,3 +7,11 @@
   margin-right: -$padding-x;
   align-items: center;
 }
+
+.header.light {
+  background-color: $color-3;
+}
+
+.header.dark {
+  background-color: black;
+}

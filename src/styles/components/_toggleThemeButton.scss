@@ -1,3 +1,21 @@
 .toggle-theme-button {
   margin-right: $padding-x;
 }
+
+.light {
+  background-color: black;
+  
+  span.ant-switch-inner {
+    color: white;
+  }
+}
+
+.dark {
+  background-color:white;
+  
+  span.ant-switch-inner {
+    color: black;
+  }
+}
+
+
